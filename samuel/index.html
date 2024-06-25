@@ -32,11 +32,11 @@
             </div>
             <div class="d-flex flex-column fw-bold">
                 <div class="text mt-4">
-                    <p>Me chamo Samuel Lage, me formei no Colégio Santo Agostinho, e desde o inicio do ensino médio tive o interesse de fazer algum curso relacionado a programação, atualmente estou cursando Ciência da Computação na PUC Minas
+                    <p class="perfilText">Me chamo Samuel Lage, me formei no Colégio Santo Agostinho, e desde o inicio do ensino médio tive o interesse de fazer algum curso relacionado a programação, atualmente estou cursando Ciência da Computação na PUC Minas
                     </p>
                 </div>
                 <div class="info mt-4 fw-bold">
-                    <p>Localização: <a href="#">Belo Horizonte - MG &#127463;&#127479;</a></p>
+                    <p class="localizacao">Localização: <a href="#">Belo Horizonte - MG &#127463;&#127479;</a></p>
                     <p><strong>Site:</strong><br><a href="https://www.pucminas.br/">https://www.pucminas.br/</a></p>
                     <p><strong>Perfil GitHub:</strong><br><a href="https://github.com/samuellagee">github.com/samuellagee</a></p>
                 </div>
@@ -48,7 +48,7 @@
         <h1>Repositórios</h1>
         <div class="border border-bottom d-flex align-items-center"></div>
         <div id="cards" class="container mt-5 mb-5">
-            <div class="row">
+            <div id="repoCards" class="row">
                 <div class="col-md-3 col-sm-6 mb-4">
                     <div class="card h-100">
                         <a href="repo.html"><img src="what-is-scratch.png" alt="Projeto final Scratch" /></a>
@@ -90,27 +90,8 @@
             <input type="radio" name="slider" id="slide4">
             <div id="slides">
                 <div id="overflow">
-                    <div class="inner">
-                        <div class="slide slide_1">
-                            <div class="slide-content">
-                                <iframe width="914" height="514" src="https://www.youtube.com/embed/0T1E7dh8CEA" title="COMO EU COMEÇARIA HOJE NA PROGRAMAÇÃO. MUDE ISSO AGORA!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="slide slide_2">
-                            <div class="slide-content">
-                                <iframe width="914" height="514" src="https://www.youtube.com/embed/Kf68YBMOPoM" title="COMO SE TORNAR PROGRAMADOR EM 2024" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="slide slide_3">
-                            <div class="slide-content">
-                                <iframe width="914" height="514" src="https://www.youtube.com/embed/Rph8JZ12I78" title="REQUISITOS PARA PROGRAMADOR JUNIOR | PRIMEIRA VAGA COMO DEV" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <div class="slide slide_4">
-                            <div class="slide-content">
-                                <iframe width="914" height="514" src="https://www.youtube.com/embed/xo29GFnu5QU" title="O PROGRAMADOR JÚNIOR ESTÁ FODID*! (A verdade que ninguém quer falar)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
+                    <div class="inner carrosel">
+                        
                     </div>
                 </div>
             </div>
@@ -133,55 +114,8 @@
         <h1>Colegas de trabalho</h1>
         <div class="border border-bottom d-flex align-items-center"></div>
         <div id="cards" class="container mt-5 mb-5">
-            <div class="row">
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file.png" alt="Festo!" />
-                        <div class="card__content">
-                            <p class="card__title">Gustvao Mutum</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file6.png" alt="python" />
-                        <div class="card__content">
-                            <p class="card__title">Gabriel Costa</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file (1).png" alt="ykgg" />
-                        <div class="card__content">
-                            <p class="card__title">Bernardo Pires</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file (2).png" alt="js" />
-                        <div class="card__content">
-                            <p class="card__title">Gabriel Mayer</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file (3).png" alt="js" />
-                        <div class="card__content">
-                            <p class="card__title">Thiago Henrique</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-6 mb-4 mx-5">
-                    <div class="card h-100">
-                        <img src="file (4).png" alt="js" />
-                        <div class="card__content">
-                            <p class="card__title">Lucas Stancioli</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="row colegas">
+                
             </div>
         </div>
         <footer class="text-center py-4">
@@ -199,6 +133,7 @@
 
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="wow.js"></script>
 </body>
 
 </html>
