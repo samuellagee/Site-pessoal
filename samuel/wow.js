@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('repoCards').innerHTML = '';
 
                 // Itera sobre os repositórios e cria cards para cada um
-                data.forEach(repo => {
+                data.forEach((repo, index) => {
                     const card = `
                         <div class="col-md-3 col-sm-6 mb-4">
                             <div class="card h-100">
                                 <a href="repo.html?name=${repo.name}"><img src="https://via.placeholder.com/150" alt="${repo.name}" /></a>
                                 <div class="card__content">
-                                    <a href="${repo.html_url}" class="card__title">${repo.name}</a>
+                                    <a href="repo${index + 1}" class="card__title">${repo.name}</a>
                                     <p class="card__description">${repo.description}</p>
                                 </div>
                             </div>
