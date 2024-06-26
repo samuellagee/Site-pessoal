@@ -21,13 +21,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('repoCards').innerHTML = '';
 
                 // Itera sobre os repositórios e cria cards para cada um
-                data.forEach((repo, index) => {
+                data.slice(0, 3).forEach((repo, index) => {
                     const card = `
                         <div class="col-md-3 col-sm-6 mb-4">
                             <div class="card h-100">
                                 <a href="repo.html?name=${repo.name}"><img src="https://via.placeholder.com/150" alt="${repo.name}" /></a>
                                 <div class="card__content">
-                                    <a href="repo${index + 1}" class="card__title">${repo.name}</a>
+                                    <a href="repo${index + 1}.html" class="card__title">${repo.name}</a>
                                     <p class="card__description">${repo.description}</p>
                                 </div>
                             </div>
@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', function () {
             console.error('Erro:', error);
         }
     }
-
     // URL do JSON com os vídeos sugeridos
     const sugestoesURL = 'https://f43181e3-7144-4ced-b3c1-a0f1eaf7991b-00-2v3nodzmciug6.picard.replit.dev/sugestoes';
 
